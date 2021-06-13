@@ -27,6 +27,9 @@
                                     <segment title="" image="multiply" catalog="system"/>
                                     <segment title="" image="divide" catalog="system"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeCalculationMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="F42-L5-BNs"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgv-xY-ZNA">
                                 <rect key="frame" x="184" y="189" width="46" height="30"/>
@@ -75,9 +78,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answerLabel" destination="2mu-QN-Rf7" id="DDN-If-aaK"/>
                         <outlet property="firstNumberTextField" destination="6ST-5x-0n7" id="DNJ-v7-x8q"/>
                         <outlet property="secondNumberTextField" destination="ykF-tr-gna" id="kOX-Fu-k44"/>
-                        <outlet property="selectCalculationMethod" destination="upM-Ze-8Li" id="YHs-J0-4ly"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
